@@ -12,7 +12,7 @@ Our client is an Insurance company that has provided Health Insurance to its cus
  It is important to understand the problem domain and key terms used in the definition of a problem before beginning a project. In the financial services industry, cross-selling is a popular term.
 
 ---
----
+
 
 ## **Data Description**
 
