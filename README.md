@@ -11,8 +11,12 @@ Our client is an Insurance company that has provided Health Insurance to its cus
 
  It is important to understand the problem domain and key terms used in the definition of a problem before beginning a project. In the financial services industry, cross-selling is a popular term.
 
+---
+---
 
-## **Attribute Information**
+## **Data Description**
+
+We have a dataset which contains information about demographics (gender, age, region code type), Vehicles (Vehicle Age, Damage), Policy (Premium, sourcing channel) etc. related to a person who is interested in vehicle insurance. We have 381109 data points available.
 
 1. id :	Unique ID for the customer
 
@@ -42,3 +46,8 @@ Our client is an Insurance company that has provided Health Insurance to its cus
 
 **Starting from loading our dataset, we firstly performed data cleaning and refactoring by outlier detection and normalization of data. Then we covered EDA, feature selection and algorithm selection, and hyperparameter tuning. The Accuracy score obtained for all models was in the range of 68% to 75% before tuning After tuning the models we were able to get an accuracy of approx 80%. But we selected our best model as the model with an accuracy score of 75% considering precision and recall as we have an unequal number of observations in each class in our dataset, so accuracy alone can be misleading.**
 
+## **References**
+
+https://towardsdatascience.com
+https://www.analyticsvidhya.com
+https://machinelearningmastery.com
