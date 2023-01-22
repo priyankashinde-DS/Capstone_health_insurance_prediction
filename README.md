@@ -1,20 +1,23 @@
-# HEALTH INSURANCE CROSS SELL PREDICTION
+# **HEALTH INSURANCE CROSS SELL PREDICTION**
+
+![image](https://user-images.githubusercontent.com/87980985/213925810-954a577c-31a0-49df-9841-667cffb33a4c.png)
 
 
-**Building a model to predict whether a customer would be interested in Vehicle Insurance is extremely helpful for the company because it can then accordingly plan its communication strategy to reach out to those customers and optimize its business model and revenue. Building a model to predict whether the policyholders (customers) from the past year will also be interested in Vehicle Insurance provided by the company**
+**In this project we build a model to predict whether the policyholders (customers) from the past year will also be interested in Vehicle Insurance provided by the company**
 
-## **Problem Statement**
-Our client is an Insurance company that has provided Health Insurance to its customers now they need your help in building a model **to predict whether the policyholders (customers) from past year will also be interested in Vehicle Insurance provided by the company.**
+## **📖Introduction**
+An insurance policy is an arrangement by which a company undertakes to provide a guarantee of compensation for specified loss, damage, illness, or death in return for the payment of a specified premium. There are multiple factors that play a major role in capturing customers for any insurance policy. Here we have information about demographics such as age, gender, region code, and vehicle damage, vehicle age, annual premium, policy sourcing channel. Based on the previous trend, this data analysis and prediction with machine learning models can help us understand what are the reasons for news popularity on social media and obtain the best classification model.
 
-### **What is Cross-Sell Prediction?**
+## **📖Problem Statement**
+
+Our client is an Insurance company that has provided Health Insurance to its customers. Now they need the help in building a model to predict whether the policyholders (customers) from the past year will also be interested in Vehicle Insurance provided by the company.
+
+An insurance policy is an arrangement by which a company undertakes to provide a guarantee of compensation for specified loss, damage, illness, or death in return for the payment of a specified premium. A premium is a sum of money that the customer needs to pay regularly to an insurance company for this guarantee.
+
+Building a model to predict whether a customer would be interested in Vehicle Insurance is extremely helpful for the company because it can then accordingly plan its communication strategy to reach out to those customers and optimize its business model and revenue.
 
 
- It is important to understand the problem domain and key terms used in the definition of a problem before beginning a project. In the financial services industry, cross-selling is a popular term.
-
----
-
-
-## **Data Description**
+## **📖Data Description**
 
 We have a dataset which contains information about demographics (gender, age, region code type), Vehicles (Vehicle Age, Damage), Policy (Premium, sourcing channel) etc. related to a person who is interested in vehicle insurance. We have 381109 data points available.
 
@@ -42,9 +45,18 @@ We have a dataset which contains information about demographics (gender, age, re
 
 12. Response :	1 : Customer is interested, 0 : Customer is not interested
 
+# **Steps Involved**
+
+**1) EDA**
+In Exploratory Data Analysis, firstly we explored the 4 numerical features: Age, Policy_Sales_Channel, Region_Code, Vintage. Further, we categorized age as youngAge, middleAge, and oldAge and also categorized policy_sales_channel and region_code. From here we observed that customers belonging to the youngAge group are less interested in taking vehicle insurance. Similarly, Region_C, Channel_A have the highest number of customers who are not interested in insurance. From the vehicle_Damage feature, we were able to conclude that customers with vehicle damage are more likely to take vehicle insurance. Similarly, the Annual Premium for customers with vehicle damage history is higher.
+
+**2) Encoding categorical values**
+We used one-hot encoding for converting the categorical columns such as 'Gender', 'Previously_Insured','Vehicle_Age','Vehicle_Damage', 'Age_Group', 'Policy_Sales_Channel_Categorical', 'Region_Code_Categorical' into numerical values so that our model can understand and extract valuable information from these columns.
+
+
 ## **Conclusion**
 
-**Starting from loading our dataset, we firstly performed data cleaning and refactoring by outlier detection and normalization of data. Then we covered EDA, feature selection and algorithm selection, and hyperparameter tuning. The Accuracy score obtained for all models was in the range of 68% to 75% before tuning After tuning the models we were able to get an accuracy of approx 80%. But we selected our best model as the model with an accuracy score of 75% considering precision and recall as we have an unequal number of observations in each class in our dataset, so accuracy alone can be misleading.**
+**Starting from loading our dataset, we firstly performed data cleaning and refactoring by outlier detection and normalization of data. Then we covered EDA, feature selection and algorithm selection, and hyperparameter tuning. The Accuracy score obtained for all models was in the range of 73% to 79% before tuning After tuning the models we were able to get an accuracy of 80%. But we selected our best model as the model with an accuracy score of 79% considering precision and recall as we have an unequal number of observations in each class in our dataset, so accuracy alone can be misleading.**
 
 ## **References**
 
