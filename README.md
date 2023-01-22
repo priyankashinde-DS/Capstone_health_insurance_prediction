@@ -47,12 +47,23 @@ We have a dataset which contains information about demographics (gender, age, re
 
 # **Steps Involved**
 
-**1) EDA**
-In Exploratory Data Analysis, firstly we explored the 4 numerical features: Age, Policy_Sales_Channel, Region_Code, Vintage. Further, we categorized age as youngAge, middleAge, and oldAge and also categorized policy_sales_channel and region_code. From here we observed that customers belonging to the youngAge group are less interested in taking vehicle insurance. Similarly, Region_C, Channel_A have the highest number of customers who are not interested in insurance. From the vehicle_Damage feature, we were able to conclude that customers with vehicle damage are more likely to take vehicle insurance. Similarly, the Annual Premium for customers with vehicle damage history is higher.
+**1. Exploratory Data Analysis:**
 
-**2) Encoding categorical values**
+**a. Understanding the data-**
+In this step after loading the data I performed head, tail, columns, info, dtypes, describe functions to get basic information about our dataset.
+
+**b. Checking for missing & duplicated values-**
+Then I checked for missing values in our dataset using is null function. Some of our features had missing values that I filled with ‘unknown’
+
+**2. Data Visualization**
+
+In Data Visualization, firstly we explored the 4 numerical features: Age, Policy_Sales_Channel, Region_Code, Vintage. Further, we categorized age as youngAge, middleAge, and oldAge and also categorized policy_sales_channel and region_code. From here we observed that customers belonging to the youngAge group are less interested in taking vehicle insurance. Similarly, Region_C, Channel_A have the highest number of customers who are not interested in insurance. From the vehicle_Damage feature, we were able to conclude that customers with vehicle damage are more likely to take vehicle insurance. Similarly, the Annual Premium for customers with vehicle damage history is higher.
+
+**3. Encoding categorical values**
+
 We used one-hot encoding for converting the categorical columns such as 'Gender', 'Previously_Insured','Vehicle_Age','Vehicle_Damage', 'Age_Group', 'Policy_Sales_Channel_Categorical', 'Region_Code_Categorical' into numerical values so that our model can understand and extract valuable information from these columns.
 
+**4. Model Building**
 
 ## **Conclusion**
 
